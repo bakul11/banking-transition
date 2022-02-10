@@ -13,6 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <!-- FontAswame -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
     <!-- Main CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,10 +29,16 @@
                 <div class="login-section p-5 rounded">
                     <h3 class="fw-bold fs-4">Login Now :</h3>
                     <div>
-                        <input type="email" name="" id="email" class="form-control form-control-lg mt-3"
-                            placeholder="Email address" required>
-                        <input type="password" name="" id="password" class="form-control form-control-lg mt-3"
-                            placeholder="Password" required>
+                        <div class="input-group flex-nowrap mt-3">
+                            <span class="input-group-text" id="addon-wrapping"><i class="fas fa-envelope-open-text"></i></span>
+                            <input type="email" class="form-control form-control-lg" placeholder="Email address" aria-label="Username"
+                                aria-describedby="addon-wrapping" id="email">
+                        </div>
+                        <div class="input-group flex-nowrap mt-3">
+                            <span class="input-group-text" id="addon-wrapping"><i class="fas fa-unlock-alt"></i></span>
+                            <input type="password" class="form-control form-control-lg" placeholder="Password" aria-label="Username"
+                                aria-describedby="addon-wrapping" id="password">
+                        </div>
                         <input type="submit" value="Login Now" class="btn btn-success mt-3 fw-bold" id="loginBtn">
                     </div>
                     <p id="errorMessage" class="text-danger fw-bold mt-3"></p>
