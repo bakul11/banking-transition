@@ -18,9 +18,29 @@
 </head>
 
 <body>
+    <div class="main-header container mt-5">
+        <h2 class="text-center text-success pb-5">Welcome to Pioneer Bank</h2>
+        <div class="row">
+            <div class="col-lg-9 mx-auto">
+                <div class="login-section p-5 rounded">
+                    <h3 class="fw-bold fs-4">Login Now :</h3>
+                    <div>
+                        <input type="email" name="" id="email" class="form-control form-control-lg mt-3"
+                            placeholder="Email address" required>
+                        <input type="password" name="" id="password" class="form-control form-control-lg mt-3"
+                            placeholder="Password" required>
+                        <input type="submit" value="Login Now" class="btn btn-success mt-3 fw-bold" id="loginBtn">
+                    </div>
+                    <p id="errorMessage" class="text-danger fw-bold mt-3"></p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!--Welcome Main pages -->
     <div class="header container mt-5">
-        <h2 class="text-center mb-5">Welcome to Pioneer Bank</h2>
-        <div class="row gy-4">
+        <h2 class="text-center mb-4">Welcome to Pioneer Bank</h2>
+        <div class="row gy-4 mb-5">
             <div class="col-md-4 col-sm-12">
                 <div class="banking-item rounded align-items-center ps-4 pt-5 pb-5 deposit">
                     <h4 class="text-light text-capitalize">deposit</h4>
@@ -59,6 +79,7 @@
             </div>
         </div>
     </div>
+    <script src="js/login.js"></script>
     <script src="js/banking.js"></script>
 </body>
 
